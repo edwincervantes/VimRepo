@@ -54,8 +54,6 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
 let python_highlight_all=1
 syntax on
 
