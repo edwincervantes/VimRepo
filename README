@@ -1,1 +1,3 @@
 This is my Vim configuration.
+Make sure to take the vimrc and rename accordingly.
+    My recommendation is to add "runtime vimrc" as the only line in your .vimrc
