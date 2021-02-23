@@ -43,23 +43,3 @@ nmap <leader>gh :diffget //3<CR>
 
 nmap <leader>gu :dfiget //2<CR>
 
-"PEP-8 style guide and Python stuff
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-let python_highlight_all=1
-syntax on
-
-"More style guides
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-
