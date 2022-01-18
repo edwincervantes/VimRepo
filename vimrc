@@ -21,6 +21,13 @@ set colorcolumn=80
 set encoding=utf-8
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+" Install vim-plug if it doesn't installed yet
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 "Begin plugstuff
 call plug#begin('~/.vim/plugged')
 
